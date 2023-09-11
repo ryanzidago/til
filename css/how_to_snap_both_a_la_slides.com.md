@@ -2,7 +2,7 @@
 
 ```html
 <div class="flex h-screen w-screen snap-x snap-mandatory flex-row overflow-auto">
-  <div class="flex w-screen shrink-0 snap-y snap-mandatory snap-start flex-col items-center overflow-auto bg-sky-500 text-center">
+  <div class="flex w-screen shrink-0 snap-y snap-mandatory snap-start flex-col items-center overflow-auto bg-sky-500">
     <div class="flex h-screen w-full shrink-0 snap-start items-center justify-center bg-sky-500">Hello, world!</div>
     <div class="flex h-screen w-full shrink-0 snap-start items-center justify-center">Bonjour, monde!</div>
     <div class="flex h-screen w-full shrink-0 snap-start items-center justify-center">Hallo, Welt!</div>

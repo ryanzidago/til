@@ -125,7 +125,7 @@ WITH ordered_availabilities AS (
 SELECT *
 FROM ordered_availabilities
 WHERE row_number = 1
-ORDER BY 1
+ORDER BY 1;
 ```
 
 Live example [here](https://www.db-fiddle.com/f/bj9RrN7Cr6Y7Q15B3p27hU/0).

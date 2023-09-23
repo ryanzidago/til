@@ -2,7 +2,7 @@
 
 Given a row of columns where each column contains many rows (where each row represents an item); I wanted the user to be able to:
 - dragging and dropping a column betwen other columns to re-order them
-- dragging and dropping a row item within a colum to re-order the column's rows
+- dragging and dropping a row within a colum to re-order the column's rows
 - dragging and dropping a column row into another column (moving an item from a column into another one)
 
 Exactly like a project management software where tickets are dragged and dropped across statuses. 

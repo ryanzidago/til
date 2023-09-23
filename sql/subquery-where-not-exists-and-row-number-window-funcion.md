@@ -21,9 +21,9 @@ CREATE TABLE IF NOT EXISTS Accommodations (
 );
 
 CREATE TABLE IF NOT EXISTS Visits (
-	id INT PRIMARY KEY,
+  id INT PRIMARY KEY,
 	accommodation_id INT,
-  	FOREIGN KEY (accommodation_id) REFERENCES Accommodations(id),
+  FOREIGN KEY (accommodation_id) REFERENCES Accommodations(id),
 	start_datetime TIMESTAMP, 
 	end_datetime TIMESTAMP
 );
@@ -31,9 +31,9 @@ CREATE TABLE IF NOT EXISTS Visits (
 CREATE TABLE IF NOT EXISTS Availabilities (
 	id INT PRIMARY KEY,
 	accommodation_id INT,
-  	FOREIGN KEY (accommodation_id) REFERENCES Accommodations(id),
+  FOREIGN KEY (accommodation_id) REFERENCES Accommodations(id),
 	start_datetime TIMESTAMP,
-  	end_datetime TIMESTAMP
+  end_datetime TIMESTAMP
 );
  
 
@@ -68,7 +68,7 @@ First, a very basic query to return all of the visits associated to an accommoda
 
 ```sql
 SELECT
-	accommodations.*, 
+  accommodations.*, 
 	availabilities.*, 
 	visits.*
 FROM visits

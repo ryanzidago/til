@@ -1,6 +1,6 @@
 # Derived tables vs. CTEs vs. temporary tables
 
-For the following schema:
+For the following schema and dataset:
 
 ```sql
 DROP TABLE IF EXISTS orders;

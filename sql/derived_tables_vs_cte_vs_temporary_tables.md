@@ -60,6 +60,10 @@ CREATE TEMPORARY TABLE IF NOT EXISTS total_spent_by_customer_id AS (
 	FROM orders
 	GROUP BY customer_id
 );
+
+SELECT *
+FROM total_spent_by_customer_id
+WHERE total_spent_by_customer_id.total_spent > 1000;
 ```
 
 See [thread](https://www.perplexity.ai/search/Whats-a-derived-2HBaiJyLRuOOmjfbBtd.0w?s=c) on perplexity.ai.

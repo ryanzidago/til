@@ -38,6 +38,8 @@ FROM (
 WHERE total_spent_by_customer_id.total_spent > 1000;
 ```
 
+Derived tables are the aliased result of a `SELECT` statement nested within a `FROM` statement (another outer `SELECT` statement). 
+
 ## Using a CTE
 
 ```sql
@@ -51,6 +53,7 @@ SELECT *
 FROM total_spent_by_customer_id
 WHERE total_spent_by_customer_id.total_spent > 1000;
 ```
+CTEs are temporary results that can be referenced by other statements. They only exists during the execution of the query ([source](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-cte/)).
 
 ## Using a temporary table
 
@@ -65,5 +68,7 @@ SELECT *
 FROM total_spent_by_customer_id
 WHERE total_spent_by_customer_id.total_spent > 1000;
 ```
+
+Temporary tables are automatically dropped at the end of the session or transaction. 
 
 See [thread](https://www.perplexity.ai/search/Whats-a-derived-2HBaiJyLRuOOmjfbBtd.0w?s=c) on perplexity.ai.

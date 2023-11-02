@@ -1,7 +1,6 @@
 # json_to_recordset
 
-Today I learned about the PostgreSQL's function `JSON_TO_RECORDSET` which allows you to query JSON data if you were dealing with a regular databse table. 
-
+Today I learned about the PostgreSQL function `JSON_TO_RECORDSET` which allows you to query JSON data as if you were dealing with a regular databse table:
 ```sql
 SELECT *
 FROM JSON_TO_RECORDSET(
